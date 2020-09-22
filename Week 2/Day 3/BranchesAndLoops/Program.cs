@@ -19,10 +19,10 @@ namespace BranchesAndLoops
             {
                 hitpoint += 10; 
                 Console.WriteLine($"Warrior Hp: {hitpoint}");
-                Console.WriteLine("Regenerate spell is complete");
-            } 
-            
-           
+                
+            }
+            Console.WriteLine("Regenerate spell is complete");
+
         }
 
 
