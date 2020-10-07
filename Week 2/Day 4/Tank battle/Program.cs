@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Tank_battle
 {
@@ -10,10 +11,11 @@ namespace Tank_battle
             Random randon = new Random();
 
             int fireDistance;
+            int shellsLeft = 5;
 
             Console.Write("Write your name :");
-            Console.WriteLine("Ali");
-            string name = "Ali"; // Console.ReadLine();
+            Console.WriteLine();
+            string name = Console.ReadLine();
 
             fireDistance = randon.Next(1, 20);
 
@@ -36,13 +38,17 @@ namespace Tank_battle
 
             Console.WriteLine();
             Console.WriteLine($"Aim your water hose, {name}!");
-            
+
             Console.Write("Enter distance: ");
             string waterDistanceText = Console.ReadLine();
             int waterDistance = Int32.Parse(waterDistanceText);
 
             Console.Write(" ");
             Console.Write(" ");
+
+
+
+
 
             for (int i = 0; i < waterDistance; i++)
             {
@@ -51,18 +57,49 @@ namespace Tank_battle
 
             Console.WriteLine($"W");
 
-            if (waterDistance > fireDistance)
+            Console.WriteLine($"Aim your shot, {name}");
+
+            do
             {
-                Console.WriteLine("oh no your shot was too long");
-            }
-            else if (waterDistance < fireDistance)
-            {
-                Console.WriteLine("oh no your shot was too short");
-            }
-            else
-            {
-                Console.WriteLine("it is ok");
-            }
+
+                if (waterDistance > fireDistance)
+                {
+                    Console.WriteLine("oh no your shot was too long");
+                }
+                else if (waterDistance < fireDistance)
+                {
+                    Console.WriteLine("oh no your shot was too short");
+                }
+                else
+                {
+                    Console.WriteLine("it is ok");
+
+                    Console.WriteLine("");
+
+                }
+
+                return;
+            } while (true);
+
+            Console.WriteLine(" loser");
+            Console.WriteLine();
+            Console.WriteLine("Alsa, the shell files past the tank");
+            Console.WriteLine("you have 4 shells left");
+
+
+
+            
+
         }
     }
 }
+    
+
+
+
+
+
+
+
+
+    
