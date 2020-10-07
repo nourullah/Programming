@@ -6,8 +6,4 @@
     <RootNamespace>day_5</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Include="C:\Users\Nour1\Desktop\Program.cs" Link="Program.cs" />
-  </ItemGroup>
-
 </Project>
